@@ -39,7 +39,7 @@
       },
       {
         "package": "feather-objects",
-        "repositoryURL": "https://github.com/feathercms/feather-objects",
+        "repositoryURL": "https://github.com/xcode73/feather-objects",
         "state": {
           "branch": "main",
           "revision": "169386ce3bf664fa768186467e4aec1caaee0fcf",
@@ -255,7 +255,7 @@
       },
       {
         "package": "swift-numerics",
-        "repositoryURL": "https://github.com/apple/swift-numerics",
+        "repositoryURL": "https://github.com/apple/swift-numerics.git",
         "state": {
           "branch": null,
           "revision": "0a5bc04095a675662cf24757cc0640aa2204253b",
