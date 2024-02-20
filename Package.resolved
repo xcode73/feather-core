@@ -119,12 +119,12 @@
         }
       },
       {
-        "package": "vapor-spec",
+        "package": "spec",
         "repositoryURL": "https://github.com/binarybirds/spec",
         "state": {
           "branch": null,
-          "revision": "4b83f1484a57bc8b86841257659c4696badd7d68",
-          "version": "2.0.0"
+          "revision": "aecab17649ac83133daa98e54620911773227946",
+          "version": "1.2.2"
         }
       },
       {

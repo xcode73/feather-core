@@ -17,7 +17,7 @@ let package = Package(
         .package(url: "https://github.com/binarybirds/swift-html", from: "1.7.0"),
         .package(url: "https://github.com/xcode73/feather-objects", .branch("test-dev")),
         .package(url: "https://github.com/xcode73/feather-icons", .branch("test-dev")),
-        .package(url: "https://github.com/binarybirds/spec", from: "2.0.0"),
+        .package(url: "https://github.com/binarybirds/spec", from: "1.2.0"),
     ],
     targets: [
         .target(name: "Feather", dependencies: [
