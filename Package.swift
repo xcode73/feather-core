@@ -10,7 +10,7 @@ let package = Package(
         .library(name: "Feather", targets: ["Feather"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor", from: "4.70.0"),
+        .package(url: "https://github.com/vapor/vapor", from: "4.92.3"),
         .package(url: "https://github.com/vapor/fluent", from: "4.4.0"),
         .package(url: "https://github.com/binarybirds/liquid", from: "1.3.0"),
         .package(url: "https://github.com/binarybirds/mail", from: "0.0.1"),
