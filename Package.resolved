@@ -30,16 +30,16 @@
     {
       "identity" : "feather-icons",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/xcode73/feather-icons",
+      "location" : "https://github.com/xcode73/feather-icons.git",
       "state" : {
         "branch" : "test-dev",
-        "revision" : "6335d122ee61eae3ddc8a47a3abde81d01d3574e"
+        "revision" : "2cd078e57088a89dcc375208f8e737dbf4c791bd"
       }
     },
     {
       "identity" : "feather-objects",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/xcode73/feather-objects",
+      "location" : "https://github.com/xcode73/feather-objects.git",
       "state" : {
         "branch" : "test-dev",
         "revision" : "7ea11be04bb31c4c9624f14b55baecdb203427cf"
