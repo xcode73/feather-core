@@ -4,10 +4,10 @@ import PackageDescription
 let package = Package(
     name: "feather-core",
     platforms: [
-        .macOS(.v10_15),
+        .macOS(.v10_15)
     ],
     products: [
-        .library(name: "Feather", targets: ["Feather"]),
+        .library(name: "Feather", targets: ["Feather"])
     ],
     dependencies: [
         .package(url: "https://github.com/vapor/vapor", from: "4.92.3"),
@@ -17,7 +17,7 @@ let package = Package(
         .package(url: "https://github.com/binarybirds/swift-html", from: "1.7.0"),
         .package(url: "https://github.com/xcode73/feather-objects", branch: "test-dev"),
         .package(url: "https://github.com/xcode73/feather-icons", branch: "test-dev"),
-        .package(url: "https://github.com/binarybirds/spec", from: "1.2.0"),
+        .package(url: "https://github.com/binarybirds/spec", from: "1.2.0")
     ],
     targets: [
         .target(name: "Feather", dependencies: [
@@ -30,23 +30,21 @@ let package = Package(
             .product(name: "SwiftRss", package: "swift-html"),
             .product(name: "SwiftSitemap", package: "swift-html"),
             .product(name: "FeatherIcons", package: "feather-icons"),
-            .product(name: "FeatherObjects", package: "feather-objects"),
+            .product(name: "FeatherObjects", package: "feather-objects")
         ], resources: [
-            .copy("Modules/System/Bundle"),
+            .copy("Modules/System/Bundle")
         ]),
-    
         .target(name: "XCTFeather", dependencies: [
             .target(name: "Feather"),
-            .product(name: "Spec", package: "spec"),
+            .product(name: "Spec", package: "spec")
         ]),
         
         // MARK: - test targets
-        
         .testTarget(name: "FeatherTests", dependencies: [
-            .target(name: "Feather"),
+            .target(name: "Feather")
         ]),
         .testTarget(name: "XCTFeatherTests", dependencies: [
-            .target(name: "XCTFeather"),
+            .target(name: "XCTFeather")
         ])
     ],
     swiftLanguageVersions: [.v5]
