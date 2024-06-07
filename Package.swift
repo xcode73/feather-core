@@ -18,7 +18,7 @@ let package = Package(
         .package(url: "git@github.com:vapor/vapor.git", from: "4.100.0"),
         .package(url: "git@github.com:vapor/fluent.git", from: "4.10.0"),
         .package(url: "git@github.com:BinaryBirds/liquid.git", from: "1.3.0"),
-        .package(url: "git@github.com:BinaryBirds/swift-html.git", from: "5.8.0"),
+        .package(url: "git@github.com:BinaryBirds/swift-html.git", from: "1.7.0"),
 //        .package(url: "git@github.com:BinaryBirds/swift-css.git", from: "1.0.0"),
         .package(url: "git@github.com:BinaryBirds/vapor-spec.git", from: "1.2.0"),
     ],
