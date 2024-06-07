@@ -1,4 +1,4 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.9
 import PackageDescription
 import Foundation
 
@@ -29,27 +29,32 @@ let package = Package(
             dependencies: [
                 .product(name: "Vapor", package: "vapor"),
                 .target(name: "FeatherCliGenerator"),
-            ]
+            ],
+            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
         ),
         .target(
             name: "FeatherIcons",
             dependencies: [
                 .product(name: "SwiftSvg", package: "swift-html"),
-            ]
+            ],
+            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
         ),
         .target(
             name: "FeatherCliGenerator",
-            dependencies: []
+            dependencies: [],
+            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
         ),
         .target(
             name: "FeatherCoreApi",
-            dependencies: []
+            dependencies: [],
+            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
         ),
         .target(
             name: "FeatherCoreSdk",
             dependencies: [
                 .target(name: "FeatherCoreApi"),
-            ]
+            ],
+            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
         ),
         .target(
             name: "FeatherCore",
@@ -67,38 +72,44 @@ let package = Package(
             ],
             resources: [
                 .copy("Bundle"),
-            ]
+            ],
+            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
         ),
 //        .target(
 //            name: "XCTFeather",
 //            dependencies: [
 //                .target(name: "FeatherCore"),
 //                .product(name: "Spec", package: "spec"),
-//            ]
+//            ],
+//            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
 //        ),
         .testTarget(
             name: "FeatherCoreTests",
             dependencies: [
                 .target(name: "FeatherCore"),
-            ]
+            ],
+            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
         ),
         .testTarget(
             name: "FeatherCoreSdkTests",
             dependencies: [
                 .target(name: "FeatherCoreSdk"),
-            ]
+            ],
+            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
         ),
         .testTarget(
             name: "FeatherCliGeneratorTests",
             dependencies: [
                 .target(name: "FeatherCliGenerator"),
-            ]
+            ],
+            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
         ),
 //        .testTarget(
 //            name: "XCTFeatherTests",
 //            dependencies: [
 //                .target(name: "XCTFeather"),
-//            ]
+//            ],
+//            swiftSettings: [.enableExperimentalFeature("StrictConcurrency=complete")]
 //        )
     ]
 )
