@@ -15,8 +15,11 @@ let package = Package(
         .package(url: "https://github.com/binarybirds/liquid.git", from: "1.3.2"),
         .package(url: "https://github.com/binarybirds/mail.git", from: "0.0.2"),
         .package(url: "https://github.com/binarybirds/swift-html.git", from: "1.7.0"),
-        .package(url: "https://github.com/xcode73/feather-objects.git", branch: "test-dev"),
-        .package(url: "https://github.com/xcode73/feather-icons.git", branch: "test-dev"),
+        // local
+        .package(path: "../feather-objects"),
+        .package(path: "../feather-icons"),
+//        .package(url: "https://github.com/xcode73/feather-objects.git", branch: "test-dev"),
+//        .package(url: "https://github.com/xcode73/feather-icons.git", branch: "test-dev"),
         .package(url: "https://github.com/binarybirds/spec.git", from: "1.2.0")
     ],
     targets: [
