@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
@@ -15,12 +15,12 @@ let package = Package(
         .library(name: "XCTFeather", targets: ["XCTFeather"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor", from: "4.55.0"),
-        .package(url: "https://github.com/vapor/fluent", from: "4.4.0"),
-        .package(url: "https://github.com/binarybirds/liquid", from: "1.3.0"),
-        .package(url: "https://github.com/binarybirds/swift-html", from: "1.6.0"),
-//        .package(url: "https://github.com/binarybirds/swift-css", from: "1.0.0"),
-        .package(url: "https://github.com/binarybirds/spec", from: "1.2.0"),
+        .package(url: "git@github.com:vapor/vapor.git", from: "4.100.0"),
+        .package(url: "git@github.com:vapor/fluent.git", from: "4.10.0"),
+        .package(url: "git@github.com:BinaryBirds/liquid.git", from: "1.3.0"),
+        .package(url: "git@github.com:BinaryBirds/swift-html.git", from: "5.8.0"),
+//        .package(url: "git@github.com:BinaryBirds/swift-css.git", from: "1.0.0"),
+        .package(url: "git@github.com:BinaryBirds/vapor-spec.git", from: "1.2.0"),
     ],
     targets: [
         .executableTarget(name: "FeatherCli", dependencies: [
